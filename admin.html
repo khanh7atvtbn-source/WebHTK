@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quản trị nội dung</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      if (!localStorage.getItem("isLogin")) {
+        window.location.href = "login.html";
+      }
+    </script>
+
+    <h2>Quản lý nội dung website</h2>
+
+    <p style="color: gray; font-style: italic">
+      * Trang quản trị mang tính minh hoạ giao diện CMS. * Dữ liệu sản phẩm
+      chính được lấy từ CSDL (data.json).
+    </p>
+
+    <input type="text" id="name" placeholder="Tên sản phẩm" />
+    <input type="number" id="price" placeholder="Giá" />
+    <input type="file" id="imageUpload" accept="image/*" />
+    <br /><br />
+    <img id="preview" width="200" />
+
+    <br /><br />
+
+    <button onclick="addProduct()">Thêm nội dung (demo)</button>
+    <button onclick="addProduct()">➕ Thêm sản phẩm</button>
+    <button onclick="logout()">🚪 Đăng xuất</button>
+
+    <h3>Danh sách nội dung (demo)</h3>
+    <ul id="list"></ul>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

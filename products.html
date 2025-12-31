@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sản phẩm | Shop Đồ Ăn Vặt Laila</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo">KTHShop</div>
+        <nav class="nav-menu">
+          <a href="index.html">Trang chủ</a>
+          <a href="products.html">Sản phẩm</a>
+          <a href="contact">Liên hệ</a>
+          <a href="#">Giỏ hàng</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="banner-content">
+        <img src="images/psd2.jpg" />
+      </div>
+    </section>
+
+    <h1 class="title-border">🍟 Danh sách sản phẩm</h1>
+    <a class="back-home" href="index.html">⬅ Quay về trang chủ</a>
+
+    <section class="product-list">
+      <div class="product-container" id="productContainer">
+        <div class="product-card">
+          <img src="images/Khoai.jpg" />
+          <h3>Khoai tây chiên</h3>
+          <p class="price">20.000đ</p>
+          <button onclick="addToCart('Khoai tây chiên', 20000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/garan.jpg" />
+          <h3>Gà rán</h3>
+          <p class="price">30.000đ</p>
+          <button onclick="addToCart('Gà rán', 30000)">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/banhtrangtron.jpg" />
+          <h3>Bánh tráng trộn</h3>
+          <p class="price">15.000đ</p>
+          <button onclick="addToCart('Bánh tráng trộn', 15000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/nemchuaran.jpg" />
+          <h3>Nem chua rán</h3>
+          <p class="price">22.000đ</p>
+          <button onclick="addToCart('Nem chua rán', 22000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/xienque.jpg" />
+          <h3>Xiên que tổng hợp</h3>
+          <p class="price">28.000đ</p>
+          <button onclick="addToCart('Xiên que tổng hợp', 28000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/bimbim.jpg" />
+          <h3>Bim Bim</h3>
+          <p class="price">6.000đ</p>
+          <button onclick="addToCart('Bim Bim', 6000)">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/xoailac.jpg" />
+          <h3>Xoài lắc</h3>
+          <p class="price">10.000đ</p>
+          <button onclick="addToCart('Xoài lắc', 10000)">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/lapxuong.jpg" />
+          <h3>Lạp xưởng nướng đá</h3>
+          <p class="price">15.000đ</p>
+          <button onclick="addToCart('Lạp xưởng nướng đá', 15000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/xucxichchien.jpg" />
+          <h3>Xúc xích chiên</h3>
+          <p class="price">10.000đ</p>
+          <button onclick="addToCart('Xúc xích chiên', 10000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/khogalachanh.jpg" />
+          <h3>[500gram] Khô gà lá chanh</h3>
+          <p class="price">90.000đ</p>
+          <button onclick="addToCart('Khô gà lá chanh', 90000)">
+            Thêm vào giỏ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 Giỏ hàng</h2>
+      <ul id="cartList"></ul>
+      <p>Tổng: <span id="totalPrice">0</span> đ</p>
+      <button onclick="clearCart()">Xoá giỏ hàng</button>
+    </section>
+
+    <div id="toast" class="toast">✔ Đã thêm vào giỏ hàng</div>
+
+    <footer>© 2025 - Shop Đồ Ăn Vặt Laila</footer>
+  </body>
+</html>
